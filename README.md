@@ -8,3 +8,17 @@
 - 프론트엔드 웹 개발 실무를 경함하기 위한 프로젝트 학습
 
 [udemy's course](https://www.udemy.com/course/best-react/)
+
+## react-complete-guide
+
+---
+
+```
+npx create-react-app react-complete-guide
+cd react-complete-guide
+npm start
+```
+
+```
+localhost:3000
+```
