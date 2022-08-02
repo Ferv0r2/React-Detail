@@ -4,6 +4,7 @@ import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
+  // 무상태 컴포넌트 => 프리젠테이셔널 또는 dumb 컴포넌트
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
@@ -11,6 +12,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
         <div className="expense-item__price">${props.amount}</div>
       </div>
+      <button>Change Title</button>
     </Card>
   );
 };
