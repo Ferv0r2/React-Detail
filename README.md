@@ -22,3 +22,13 @@ npm start
 ```
 localhost:3000
 ```
+
+---
+
+### React.createElement(arg)
+
+return 시, 하나의 매개변수로 반환해야 하기 때문에 아래와 같은 방법으로 묶음
+
+1. `<Wrapper>`라는 `components` 생성 후 `<Wrapper>Contents</Wrapper>`
+2. `<>Contents</>`
+3. `<React.Fragment>Contents</React.Fragment>`
