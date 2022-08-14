@@ -32,3 +32,11 @@ return 시, 하나의 매개변수로 반환해야 하기 때문에 아래와 �
 1. `<Wrapper>`라는 `components` 생성 후 `<Wrapper>Contents</Wrapper>`
 2. `<>Contents</>`
 3. `<React.Fragment>Contents</React.Fragment>`
+
+### ReactDom.createPortal(reactElement, domElement)
+
+root DOM 트리를 벗어나 다른 DOM에서 어플리케이션의 일부분을 그릴 수 있음
+
+1. `index.html`에 <div id="test-root">
+2. `import ReactDom from "react-dom";`
+3. `{ReactDOM.createPortal(<Test />, document.getElementById("test-root"))}`
