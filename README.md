@@ -41,8 +41,17 @@ root DOM 트리를 벗어나 다른 DOM에서 어플리케이션의 일부분을
 2. `import ReactDom from "react-dom";`
 3. `{ReactDOM.createPortal(<Test />, document.getElementById("test-root"))}`
 
-### useEffect
+### useEffect()
 
+```jsx
+useEffect(() => {}, [dependencies]);
 ```
-useEffect(() => {}, [dependencies])
+
+### useState() vs useReducer()
+
+useState() : state가 다양하지 않은 경우  
+useReducer() : `more power then useState()` 여러 가지가 관련된 state가 결합된 경우
+
+```jsx
+const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 ```
